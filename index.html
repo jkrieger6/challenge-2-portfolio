@@ -2,31 +2,73 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href=".style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>My Portfolio</title>
 </head>
 <body>
     <header>
-        <h1><bold>Portfolio of Jake</bold></h1>
-    </header>
-    <main>
-        <section class="topnav">
+        <nav class="topnav">
             <a class="active" href="#home">Home</a>
-            <a href="#projects">Projects</a>
+            <a href="#work">Work</a>
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
+        </nav>
+    </header>
+<main>    
+    <section class="me-image">
+        <div>
+          <h1>I am Jake Krieger</h1>
+          <img src="./assets/IMG_3883 Small.jpeg" alt="Picture of me at the Grand Canyon South Rim." style="width:50px;height:50px;">
+          <h1>And I am a Web Developer</h1>
+        </div>
         </section>
-        <section class="hero-image">
-            <a class="hero-text">
-              <h2>I am Jake Krieger</h2>
-              <p>And I am a Web Developer</p>
-              <button>Hire me</button>
-              <img src="/assets/IMG_3883 Small.jpeg" alt="Picture of me at the Grand Canyon South Rim." style="width:48px;height:48px;">
-            </a>
+            <h1>Work</h1>
+         <section id="work">
+                <section class="card">
+                    <header>Project One</header>
+                <section class="zoom">
+                   <p><a href="https://jkrieger6.github.io/challenge-1/" target="_blank">
+                     <img src="./assets/pexels-oliver-sjöström-1433052.jpg" alt="Ariel image of a peninsula in the ocean." class="image" style="width:100%">
+                     </a></p>
+                     </section>
+                    <section class="card">
+                        <header>CSS Snippets Cheatsheet</header>
+                     <section class="zoom">
+                        <p><a href="https://github.com/jkrieger6/mini-project-css.git" target="_blank">
+                        <img src="./assets/pexels-oliver-sjöström-1433052.jpg" alt="Ariel image of a peninsula in the ocean." class="image" style="width:100%">
+                    </a></p>
+                    </section>   
+                </section>
+                      <section class="card">
+                        <header>Portfolio</header>
+                    <section class="zoom">
+                        <p><a href="" target="_blank">
+                        <img src="./assets/pexels-oliver-sjöström-1433052.jpg" alt="Ariel image of a peninsula in the ocean." class="image" style="width:100%">
+                    </a></p>
+                    </section>
+                    </section>
+                        <a href="" target="_blank"></a>
+                </section>     
+            </section>
+         <section id="contact" class="contact">
+            <header><h2>Contact</h2></header>
+            <ul>
+            <li>Email: jkrieger11@gmail.com</li>
+            </ul>
+            </section>
         </section>
-        <section class="about">
-            <h2>About Me</h2>
-            <p>I am currently a student preparing for a career as a full stack web developer. I have a passion for putting forth my best work and love getting input from others on how to improve my work. In my personal time, I love to enjoy the outdoors, with my dog and wife, hiking, camping, climbing, surfing. If it is outside then you can find me doing it!</p>
+        <section id="about" class="about">
+            <header><h3>About</h3></header>
+                <a>I am currently studying to become a full stack web applications Developer. 
+                By graduation I will be proficent in front end and back end web development.
+                I am currently living in the San Diego California area. To check out more of my work head to the link below.
+                </a>
+            <ul>
+                <a href="https://github.com/jkrieger6?tab=repositories" target="_blank">https://github.com/jkrieger6?tab=repositories</a>
+            </ul>
         </section>
+        <footer>
+            <p>Specially made with ❤️ by Jake Krieger</p>
+        </footer>
     </main>
 </body>

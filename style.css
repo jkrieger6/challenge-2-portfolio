@@ -1,49 +1,139 @@
-.topnav {
-    background-color: #333;
+ :root {
+  --dark-green:#133c20;
+  --ivory:rgb(225, 225, 185);
+  --line-height-size:1.3;
+  --red:rgb(219, 6, 6);
+ }
+  .topnav {
     overflow: hidden;
+    display:flex;
+    flex-wrap:wrap;
   }
   
-  /* Style the links inside the navigation bar */
   .topnav a {
     float: right;
-    color: #5623f0;
+    color: var(--ivory);
     text-align: center;
     padding: 12px 14px;
     text-decoration: underline;
     font-size: 17px;
+    display:flex;
+    flex-wrap:wrap;
   }
   
-  /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #eb8d8d;
-    color: black;
+    color: var(--ivory);
+    display:flex;
+    flex-wrap:wrap;
   }
   
-  /* Add a color to the active/current link */
   .topnav a:active {
-    background-color: #000000;
-    color: white;
+    background-color: #e4e285;
+    color: var(--red);
+    display:flex;
+    flex-wrap:wrap;
   }
 
-  body, html {
-    height: 100%;
-}
-
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  height: 50%;
+  .header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .me-image {
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  display:flex;
+  flex-wrap:wrap;
+  font-size:16px;
+  color:var(--ivory);
+  }
+
+  body {
+    background: linear-gradient(var(--dark-green), var(--ivory));
+  }
+
+  .card {
+    color:var(--ivory);
+    flex: 2 1 50px;
+    text-align: center;
+    border-style:double;
+    border-width: 2.5px; 
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    border-radius:10px;
+  }
+
+  .card header * {
+    flex: 1 0 100px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+
+  .card:hover {
+    color: var(--ivory);
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+.zoom {
+  padding: 50px;
+  transition: transform .2s; 
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
 }
 
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+.zoom:hover {
+  transform: scale(1.3); 
 }
+  .contact {
+    color:var(--dark-green);
+    display:flex;
+    flex-wrap:wrap;
+    position:relative;
+  }
+
+  .contact header {
+    text-decoration:underline;
+  }
+  
+  .about {
+    color:var(--dark-green);
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  .about header {
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  @media screen and (max-width: 992px) {
+    .card .contact .about {
+        background-color:linear-gradient(var(--dark-green), var(--ivory));
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+@media screen and (max-width: 768px) {
+    .card .contact .about }
+        background-color:linear-gradient(var(--dark-green), var(--ivory));
+        display:flex;
+        flex-wrap:wrap;
+      {
+    }
+    
+
+@media screen and (max-width: 567px) {
+    /* .card .contact .about { */ } {
+        background-color:linear-gradient(var(--dark-green), var(--ivory));
+        display:flex;
+        flex-wrap:wrap;
+      }
+    }
